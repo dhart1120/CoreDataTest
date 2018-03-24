@@ -12,6 +12,9 @@
 		5AEA3EA12066C0F300E359F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AEA3E9F2066C0F300E359F5 /* Main.storyboard */; };
 		5AEA3EA32066C0F300E359F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AEA3EA22066C0F300E359F5 /* Assets.xcassets */; };
 		5AEA3EA62066C0F300E359F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AEA3EA42066C0F300E359F5 /* LaunchScreen.storyboard */; };
+		5AEA3EAF2066C1E400E359F5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEA3EAE2066C1E400E359F5 /* CoreData.framework */; };
+		5AEA3EB22066C24F00E359F5 /* models.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA3EB02066C24F00E359F5 /* models.xcdatamodeld */; };
+		5AEA3EB42066CBC600E359F5 /* DataRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA3EB32066CBC600E359F5 /* DataRepo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		5AEA3EA22066C0F300E359F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AEA3EA52066C0F300E359F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AEA3EA72066C0F300E359F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AEA3EAE2066C1E400E359F5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5AEA3EB12066C24F00E359F5 /* fileCoreDataDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = fileCoreDataDemo.xcdatamodel; sourceTree = "<group>"; };
+		5AEA3EB32066CBC600E359F5 /* DataRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AEA3EAF2066C1E400E359F5 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				5AEA3E9A2066C0F300E359F5 /* CodeDataTest */,
 				5AEA3E992066C0F300E359F5 /* Products */,
+				5AEA3EA72066C0F300E359F5 /* Info.plist */,
+				5AEA3EAD2066C1E300E359F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,9 +68,18 @@
 				5AEA3E9F2066C0F300E359F5 /* Main.storyboard */,
 				5AEA3EA22066C0F300E359F5 /* Assets.xcassets */,
 				5AEA3EA42066C0F300E359F5 /* LaunchScreen.storyboard */,
-				5AEA3EA72066C0F300E359F5 /* Info.plist */,
+				5AEA3EB02066C24F00E359F5 /* models.xcdatamodeld */,
+				5AEA3EB32066CBC600E359F5 /* DataRepo.swift */,
 			);
 			path = CodeDataTest;
+			sourceTree = "<group>";
+		};
+		5AEA3EAD2066C1E300E359F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AEA3EAE2066C1E400E359F5 /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +155,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AEA3E9E2066C0F300E359F5 /* ViewController.swift in Sources */,
+				5AEA3EB42066CBC600E359F5 /* DataRepo.swift in Sources */,
 				5AEA3E9C2066C0F300E359F5 /* AppDelegate.swift in Sources */,
+				5AEA3EB22066C24F00E359F5 /* models.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CodeDataTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.CodeDataTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,7 +309,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CodeDataTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.CodeDataTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -320,6 +340,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5AEA3EB02066C24F00E359F5 /* models.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5AEA3EB12066C24F00E359F5 /* fileCoreDataDemo.xcdatamodel */,
+			);
+			currentVersion = 5AEA3EB12066C24F00E359F5 /* fileCoreDataDemo.xcdatamodel */;
+			path = models.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5AEA3E902066C0F300E359F5 /* Project object */;
 }
