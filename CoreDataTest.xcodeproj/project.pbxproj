@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5AEA3E982066C0F300E359F5 /* CodeDataTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeDataTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AEA3E982066C0F300E359F5 /* CoreDataTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AEA3E9B2066C0F300E359F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AEA3E9D2066C0F300E359F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5AEA3EA02066C0F300E359F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		5AEA3E8F2066C0F300E359F5 = {
 			isa = PBXGroup;
 			children = (
-				5AEA3E9A2066C0F300E359F5 /* CodeDataTest */,
+				5AEA3E9A2066C0F300E359F5 /* CoreDataTest */,
 				5AEA3E992066C0F300E359F5 /* Products */,
 				5AEA3EA72066C0F300E359F5 /* Info.plist */,
 				5AEA3EAD2066C1E300E359F5 /* Frameworks */,
@@ -55,12 +55,12 @@
 		5AEA3E992066C0F300E359F5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5AEA3E982066C0F300E359F5 /* CodeDataTest.app */,
+				5AEA3E982066C0F300E359F5 /* CoreDataTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5AEA3E9A2066C0F300E359F5 /* CodeDataTest */ = {
+		5AEA3E9A2066C0F300E359F5 /* CoreDataTest */ = {
 			isa = PBXGroup;
 			children = (
 				5AEA3E9B2066C0F300E359F5 /* AppDelegate.swift */,
@@ -71,7 +71,7 @@
 				5AEA3EB02066C24F00E359F5 /* models.xcdatamodeld */,
 				5AEA3EB32066CBC600E359F5 /* DataRepo.swift */,
 			);
-			path = CodeDataTest;
+			path = CoreDataTest;
 			sourceTree = "<group>";
 		};
 		5AEA3EAD2066C1E300E359F5 /* Frameworks */ = {
@@ -85,9 +85,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5AEA3E972066C0F300E359F5 /* CodeDataTest */ = {
+		5AEA3E972066C0F300E359F5 /* CoreDataTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5AEA3EAA2066C0F300E359F5 /* Build configuration list for PBXNativeTarget "CodeDataTest" */;
+			buildConfigurationList = 5AEA3EAA2066C0F300E359F5 /* Build configuration list for PBXNativeTarget "CoreDataTest" */;
 			buildPhases = (
 				5AEA3E942066C0F300E359F5 /* Sources */,
 				5AEA3E952066C0F300E359F5 /* Frameworks */,
@@ -97,9 +97,9 @@
 			);
 			dependencies = (
 			);
-			name = CodeDataTest;
-			productName = CodeDataTest;
-			productReference = 5AEA3E982066C0F300E359F5 /* CodeDataTest.app */;
+			name = CoreDataTest;
+			productName = CoreDataTest;
+			productReference = 5AEA3E982066C0F300E359F5 /* CoreDataTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -118,7 +118,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5AEA3E932066C0F300E359F5 /* Build configuration list for PBXProject "CodeDataTest" */;
+			buildConfigurationList = 5AEA3E932066C0F300E359F5 /* Build configuration list for PBXProject "CoreDataTest" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -131,7 +131,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5AEA3E972066C0F300E359F5 /* CodeDataTest */,
+				5AEA3E972066C0F300E359F5 /* CoreDataTest */,
 			);
 		};
 /* End PBXProject section */
@@ -297,7 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.CodeDataTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CoreDataTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -311,7 +311,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.CodeDataTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CoreDataTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,7 +321,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5AEA3E932066C0F300E359F5 /* Build configuration list for PBXProject "CodeDataTest" */ = {
+		5AEA3E932066C0F300E359F5 /* Build configuration list for PBXProject "CoreDataTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5AEA3EA82066C0F300E359F5 /* Debug */,
@@ -330,7 +330,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5AEA3EAA2066C0F300E359F5 /* Build configuration list for PBXNativeTarget "CodeDataTest" */ = {
+		5AEA3EAA2066C0F300E359F5 /* Build configuration list for PBXNativeTarget "CoreDataTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5AEA3EAB2066C0F300E359F5 /* Debug */,

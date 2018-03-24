@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  CodeDataTest
+//  CoreDataTest
 //
 //  Created by Dustin Hart on 3/24/18.
 //  Copyright © 2018 Dustin Hart. All rights reserved.
@@ -15,8 +15,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         print("Creating Users");
-        //_ = repo.createUser(username: "Bob", password: "Pa$$word", age: "23") // let bob = ...
-        //_ = repo.createUser(username: "Ted", password: "pass1234", age: "25") // let ted = ...
+        _ = repo.createUser(username: "Bob", password: "Pa$$word", age: "23") // let bob = ...
+        _ = repo.createUser(username: "Ted", password: "pass1234", age: "25") // let ted = ...
+        print()
         
         print("Printing Users")
         repo.printUsers()

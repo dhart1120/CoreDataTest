@@ -1,6 +1,6 @@
 //
 //  DataRepo.swift
-//  CodeDataTest
+//  CoreDataTest
 //
 //  Created by Dustin Hart on 3/24/18.
 //  Copyright © 2018 Dustin Hart. All rights reserved.
